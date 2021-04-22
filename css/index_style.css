@@ -1,11 +1,16 @@
+#content {
+    margin: 1.25rem auto;
+}
 header {
-    background-color: rgba(25, 25, 121, 0.664);
+    background-color: rgb(25, 25, 121);
+    color : white;
     max-width: 100%;
-    max-height: 85px
+    max-height: 85px;
 
 }
 body {
  background-color: rgb(236, 192, 134);
+ color : black;
 }
 
 footer {
