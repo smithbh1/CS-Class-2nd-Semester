@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
 #content {
     margin: 1.25rem auto;
+    font-family: "Open Sans", sans-serif;
 }
+
 header {
     background-color: rgb(25, 25, 121);
     color : white;
