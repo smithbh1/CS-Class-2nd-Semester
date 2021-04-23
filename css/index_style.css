@@ -1,50 +1,44 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+body {
+    font-size : 20px ;
+    background-color: rgb(236, 192, 134);
+    color: black;
+}
 
 #content {
     font-family: "Open Sans", sans-serif;
-    padding: .5em ;
+    padding: 1rem;
 }
 
-header {
+header,
+footer {
+    border: 3px solid white;
     background-color: rgba(25, 121, 68, 0.664);
-    color : white;
+    color: white;
     max-width: 100%;
-    max-height: 85px;
-    text-align: center;
+    margin: .5rem ;
+    padding: .5rem;
     
 
 }
-body {
- background-color: rgb(236, 192, 134);
- color : black;
+
+header img {
+    float: right;
+    height: auto;
+    max-width : 25% ;
+    max-height : 30% ;
+    box-shadow: 5px 5px 10px black;
+    margin : .75rem;
+}
+h1 {
+    text-align: center;
 }
 
 
- img{
-    max-width: 100%;
-    margin-left: 85%;
-   }
-   nav{
-       padding: .5em;
-   }
+nav {
+    padding: .5em;
+}
 
- footer {
-    background-color: rgba(25, 121, 68, 0.664);
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr ;
-    max-width: 100%;
-    max-height: 65px;
-    color: white; 
-  }
-  .copyright {
-      grid-column: 1;
-      
-  }
-  p{
-      text-align : center ;
-      
-  }
-  span {
-      color: yellow ;
-      grid-column: 2 ;
-  }
+#lastUpdate {
+    color:rgba(77, 240, 150, 0.664)
+}
