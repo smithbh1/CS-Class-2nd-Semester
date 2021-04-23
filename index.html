@@ -5,13 +5,16 @@
   <meta name="description" content="Posted work for Brian Smith for course WDD 230: Web Frontend Development">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link type = "text/css" rel = "stylesheet" href = "css/index_style.css">
+  <script type="text/javascript" src="css/js/script.js"></script>
   <title>Course Home Page</title>
 </head>
 <body> <div id = "content">
   <header>
  <h1>Brian Smith</h1>
- <div class = "personal_photo"><img src = "images/me_optimized.jpg" alt = "family photo"></div>
   </header>
+  <div class = "home-grid">
+    <div class = "personal_photo"><img src = "css/images/me_optimized.jpg" alt = "family photo"></div>
+  
  <h2> WDD 230: Assignment Portal</h2>
  <nav>
   <ul>
@@ -20,10 +23,13 @@
  </nav>
  
  <footer>
+  
    <p class = "copyright">
-     &copy; 2021 -- Brian Smith -- Utah -- <div> <a href = "https://www.byui.edu/online" target = "_blank">BYUI Online Learning</a></div>
+     &copy; <span id = "currentYear"></span> </p><p>-- Brian Smith -- Utah -- <div><a href = "https://www.byui.edu/online" target = "_blank">BYUI Online Learning</a></div>
    </p>
+   Last Updated:<span id = "lastUpdate"></span>
  </footer>
+</div>
 </div>
 </body>
 </html> 
