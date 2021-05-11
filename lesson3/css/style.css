@@ -2,6 +2,9 @@ body{
     margin:.5em;
     padding: .5em;
     max-width: 35rem;
+    
+}
+#home_body{
     background-color: rgba(252, 231, 5, 1);
 }
 nav ul{
