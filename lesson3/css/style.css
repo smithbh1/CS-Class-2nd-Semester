@@ -1,25 +1,30 @@
 body{
     margin:.5em;
     padding: .5em;
+    max-width: 60%;
+    background-color: rgba(252, 231, 5, 1);
 }
 nav ul{
     display: inline-block;
     list-style-type: none;
 }
+
+a{
+    padding: 1em;
+}
+
 @media only screen and (min-width: 40.5em) {
     nav ul{
         display: flex;
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
-    }
-    nav ul li{
         flex: 1 1 100%;
+        
     }
+    
 
 }
 
 img{
-    max-width: 10%;
+    max-width: 20%;
 }
 
 table,
@@ -28,21 +33,39 @@ tr,
 td{
     text-align: center;
     min-width: 40%;
-    border: 2px solid black
+    border: 2px solid black;
+    background-color: white ;
 }
 #background_color{
-    background-color: rgb(253, 245, 130);
+    background-color: rgba(252, 231, 5, 1);
 }
 #header_color{
-    background-color: rgba(252, 231, 5, 0.904);
+    background-color: rgb(252, 231, 5, .5);
 }
 
 #primary_nav_color{
     background-color: rgba(250, 116, 7, 0.842);
 }
 #footer_nav_color{
-    background-color: rgba(252, 231, 5, 0.904);
+    background-color: rgba(252, 231, 5, .5);
 
+}
+h{
+    font-size: 40px;
+    font-family: 'Lucida Sans', sans-serif;
+
+}
+nav{
+    border: 5px solid rgba(250, 116, 7, 0.842);
+    background-color: rgba(250, 116, 7, 0.842);
+}
+h2{
+    font-size: 25px;
+    font-family: 'Lucida Sans', sans-serif;
+}
+p{
+    font-size: 18px;
+    font-family: "Merriweather", serif;
 }
 #site_header{
     font-size: 40px;
