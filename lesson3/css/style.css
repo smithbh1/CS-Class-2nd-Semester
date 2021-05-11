@@ -1,7 +1,7 @@
 body{
     margin:.5em;
     padding: .5em;
-    max-width: 60%;
+    max-width: 35rem;
     background-color: rgba(252, 231, 5, 1);
 }
 nav ul{
@@ -50,20 +50,21 @@ td{
     background-color: rgba(252, 231, 5, .5);
 
 }
-h{
+#home_h1{
     font-size: 40px;
     font-family: 'Lucida Sans', sans-serif;
 
 }
-nav{
+#home_nav{
     border: 5px solid rgba(250, 116, 7, 0.842);
     background-color: rgba(250, 116, 7, 0.842);
+    max-width: 35rem;
 }
-h2{
+.home_h2{
     font-size: 25px;
     font-family: 'Lucida Sans', sans-serif;
 }
-p{
+.home_p{
     font-size: 18px;
     font-family: "Merriweather", serif;
 }
