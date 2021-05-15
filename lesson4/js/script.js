@@ -27,3 +27,9 @@ const monthName = months[d.getMonth()];
 const year = d.getFullYear();
 const fulldate = `${dayName}, ${d.getDate()} ${monthName} ${year}`;
 document.getElementById("currentdate").textContent = fulldate;
+
+const hambutton = document.querySelector(".ham_menu");
+const mainnav = document.querySelector(".navigation")
+
+hambutton.addEventListener("click", () => 
+{mainnav.classList.toggle("responsive")}, false);
