@@ -1,0 +1,210 @@
+body{
+    
+    background-color: rgba(252, 231, 5, 1);
+}
+.banner_message{
+    display: none;
+    padding: 1em;
+    text-align: center;
+    background-color: beige;
+}
+header {
+	
+	padding: 5px 0;
+	display: flex;
+	align-items:center;
+	justify-content:center;
+    background-color: rgba(241, 99, 3, 1);
+    
+}
+.heading{
+    padding: 0;
+    margin:0;
+    display:flex;
+    flex-direction: column;
+}
+.heading h1{
+    font-size: 30px;
+    margin-bottom: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular' sans-serif;
+    
+}
+.slogan{
+    font-style: italic;
+}
+
+header img {
+	width: 80px;
+	height: auto;
+}
+nav{
+    margin: 0 auto;
+    max-width: 760px;
+    background-color: rgba(250, 116, 7, 0.842);
+    
+}
+.navigation{
+
+    margin-top:0;
+    list-style-type: none;
+    padding: 0;
+}
+.navigation li:first-child{
+    display: block;
+}
+.navigation li{
+    display: none;
+}
+.navigation a{
+    color: black; 
+    text-decoration: none;
+    display: block;
+    padding: 1.5em;
+    text-align: center;
+    font-size: 18px;
+
+}
+
+.active, .link:hover{
+    background-color:rgba(168, 78, 4, 0.842) ;
+    text-decoration: underline;
+}
+.responsive li{
+    display: block;
+}
+
+.hero_div,
+.article_div,
+.contact_info{
+    position: relative;
+    display: block;
+    margin-left:auto;
+    margin-right: auto;
+}
+.hero_img,
+.article_img{
+    width: 100%;
+    height: auto;
+    overflow: hidden; 
+    padding-left: .5em; 
+    
+}
+.weather_summary{
+    padding: .25em;
+    position: absolute;
+    top: 25px;
+    left: 15px;
+    background-color: beige;
+    box-shadow: 0 0 30px #333;
+    opacity: .8;
+    text-align: center;
+}
+h2,
+h3{
+    text-align: center;
+}
+.forecast,
+#forecast_heading{
+    display: none;
+}
+
+.article_div h3,
+.article_div p{
+    padding: .25em;
+        
+}
+.contact_info{
+    margin-top: .5em;
+    text-align: center;
+    background-color: rgba(250, 116, 7, 0.842);
+    border: solid 1px black;
+    
+}
+.contact_info a{
+    color: black
+}
+.contact_info a:hover{
+    background-color: rgba(168, 78, 4, 0.842);
+}
+
+footer{
+    font-size: 16px;
+    padding: .5em;
+    background-color: rgba(241, 99, 3, 1);
+    margin: 0;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+p{
+    font-family: Merriweather, serif ;
+    font-size: 16px;
+}
+@media only screen and (min-width: 32.5em){
+
+    .navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block; 
+		flex: 1 1 auto;
+	}
+	.navigation a {
+		text-align: center;
+	}
+	.navigation li:first-child {
+		display: none;
+	}
+    header img {
+        width: 100px;
+        height: auto;
+    }
+    h1{
+        font-size: 35px;
+    }
+    main div{
+        max-width: 400px;
+    }
+    .forecast{
+        display: flex; 
+        flex-wrap: wrap;
+        margin: 10px auto;  
+        
+    }
+    #forecast_heading{
+        display: block;
+    }
+    .forecast div{
+        display: block;
+        text-align: center;
+        margin: .5em;
+        background-color: beige;
+        border: solid 2px black;
+        max-width: 15vw;
+        max-height: auto;
+    }
+    .sunny{
+        max-width: 10vw;
+        max-height: auto;
+    }
+    footer{
+        font-size: 18px;
+    }
+}
+@media only screen and (min-width: 80em){
+    h1{
+        font-size: 40px;
+    }
+    
+    header img {
+        width: 120px;
+        height: auto;
+    }
+    main div{
+        max-width: 900px;
+    }
+    
+    footer{
+        font-size: 20px;
+    }
+}
