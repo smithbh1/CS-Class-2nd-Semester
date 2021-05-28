@@ -9,16 +9,15 @@
     <title>Sun-day Weather Forecast</title>
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="images/sun.ico">
 
 </head>
 
 <body>
-    <div class="banner_message">Saturday = Preston Pancakes in pe Park 9:00 a.m. Saturday at the city park pavilion
+    <div class="banner_message">Saturday = Preston Pancakes in the Park 9:00 a.m. Saturday at the city park pavilion
     </div>
     <header>
-        <img src="images/sun.png" alt="sun wip sunglasses">
+        <img src="images/sun.png" alt="sun with sunglasses">
         <div class="heading">
             <h1>Sun-Day Weather Center</h1>
             <div class="slogan">The most reliable and up-to-date weather!</div>
@@ -38,21 +37,25 @@
     <main>
         <h2>Preston Idaho</h2>
         <div class="hero_div">
-            <div class="hero_img"><img src="images/resized_town_img_2.jpg" alt="picture of a town, arial view"></div>
+            <div class="hero_img"><picture>
+                <source srcset="images/preston_large.jpg" media="(min-width: 1000px)">
+                <source srcset="images/preston_medium.jpg" media="(min-width: 800px)">
+                <img src="images/preston_small.jpg" alt="sunny day with green landscape">
+            </picture></div>
             <div class="weather_summary">
                 <h3>Weather Summary</h3>
-                <div>
+                
                     <p class="label">Currently:</p>
                     <p class="value">Partly Cloudy</p>
                     <p class="label">High:</p>
-                    <p class="value">85 &deg;F</p>
+                    <p class="value"><span id="tempF">45</span>&deg;F</p>
                     <p class="label">Wind Chill</p>
-                    <p class="value">83 &deg;F</p>
+                    <p class="value"><span id="windChill">N/A</span> &deg;F</p>
                     <p class="label">Humidity:</p>
                     <p class="value">20%</p>
                     <p class="label">Wind Speed:</p>
-                    <p class="value">4 mph</p>
-                </div>
+                    <p class="value"><span id="speed">5</span> mph</p>
+                
         </div>
         </div>
 
@@ -106,6 +109,16 @@
         &copy; <span>Sun-Day Weather</span> <span>-- Brian Smith</span>
         <p id="currentdate"></p>
         <script src="js/script.js"></script>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script>
+        WebFont.load({
+            google: {
+              families: [
+                 'Merriweather'
+              ]
+            }
+          });</script>
     </footer>
 </body>
 

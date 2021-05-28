@@ -2,11 +2,16 @@ body{
     
     background-color: rgba(252, 231, 5, 1);
 }
+
 .banner_message{
     display: none;
     padding: 1em;
     text-align: center;
     background-color: beige;
+}
+img{
+    width: 100%;
+    
 }
 header {
 	
@@ -25,8 +30,8 @@ header {
 }
 .heading h1{
     font-size: 30px;
-    margin-bottom: 0;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular' sans-serif;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', sans-serif;
     
 }
 .slogan{
@@ -35,11 +40,11 @@ header {
 
 header img {
 	width: 80px;
-	height: auto;
+	
 }
 nav{
     margin: 0 auto;
-    max-width: 760px;
+    max-width: 780px;
     background-color: rgba(250, 116, 7, 0.842);
     
 }
@@ -76,28 +81,37 @@ nav{
 .hero_div,
 .article_div,
 .contact_info{
-    position: relative;
-    display: block;
+    
     margin-left:auto;
     margin-right: auto;
 }
-.hero_img,
-.article_img{
-    width: 100%;
-    height: auto;
-    overflow: hidden; 
-    padding-left: .5em; 
+ 
     
-}
+
 .weather_summary{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: .2em;
     padding: .25em;
-    position: absolute;
-    top: 25px;
-    left: 15px;
+    
     background-color: beige;
     box-shadow: 0 0 30px #333;
     opacity: .8;
     text-align: center;
+    
+}
+.weather_summary h3{
+    text-decoration: underline;
+}
+.label{
+    font-size:small;
+    grid-column-start: 1 ;
+    grid-column-end: 1;
+}
+.value{
+    font-size:small;
+    grid-column-start: 2;
+    grid-column-end: 2;
 }
 h2,
 h3{
@@ -159,33 +173,47 @@ p{
         width: 100px;
         height: auto;
     }
+    
     h1{
         font-size: 35px;
     }
-    main div{
-        max-width: 400px;
+    
+    .hero_div{
+        position: relative;
+
+    }
+    .weather_summary{
+        position: absolute;
+        top: 25px;
+        left: 15px;
     }
     .forecast{
         display: flex; 
         flex-wrap: wrap;
-        margin: 10px auto;  
+        align-items: center;
+        justify-content: center;  
         
     }
     #forecast_heading{
         display: block;
     }
     .forecast div{
-        display: block;
+        
         text-align: center;
         margin: .5em;
         background-color: beige;
         border: solid 2px black;
-        max-width: 15vw;
-        max-height: auto;
+        
+    }
+    .article_img,
+    .article_div{
+        display: block;
+        margin: 10px auto;
+        max-width: 780px;
     }
     .sunny{
         max-width: 10vw;
-        max-height: auto;
+
     }
     footer{
         font-size: 18px;
@@ -200,9 +228,7 @@ p{
         width: 120px;
         height: auto;
     }
-    main div{
-        max-width: 900px;
-    }
+
     
     footer{
         font-size: 20px;
