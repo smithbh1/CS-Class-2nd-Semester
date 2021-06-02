@@ -5,3 +5,11 @@ body{
     align-items: center;
     margin: 0 10px auto;
 }
+img[data-src] {
+    filter: blur(0.2em);
+  }
+  
+img {
+    filter: blur(0em);
+    transition: filter 0.2s;
+  }
