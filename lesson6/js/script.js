@@ -57,7 +57,7 @@ if(!localStorage.getItem('date')) {
   } else {
 		var last_visit = localStorage.getItem("date");
 	
-		number_of_days(last_visit, numerical_date);
+		number_of_days("last_visit", numerical_date);
   };
 
 function date_storage(){
