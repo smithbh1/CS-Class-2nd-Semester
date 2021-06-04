@@ -55,12 +55,13 @@ var links = header.getElementsByClassName("link");
 if(!localStorage.getItem('date')) {
 	date_storage();
   } else {
-		var last_visit = localStorage.getItem("date");
-	
-		number_of_days("last_visit", numerical_date);
+		let last_visit = localStorage.getItem("date");
+		let today = numerical_date;
+		number_of_days(last_visit, today);
   };
 
 function date_storage(){
+	
 	localStorage.setItem("date", numerical_date);
   };
 
