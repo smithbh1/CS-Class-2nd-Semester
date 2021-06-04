@@ -26,6 +26,7 @@ const dayName = daynames[d.getDay()];
 const monthName = months[d.getMonth()];
 const year = d.getFullYear();
 const fulldate = `${dayName}, ${d.getDate()} ${monthName} ${year}`;
+const numerical_date = `${d.getMonth()}/${d.getDate()}/${year}`; 
 document.getElementById("currentdate").textContent = fulldate;
 
 const hambutton = document.querySelector(".ham_menu");
@@ -49,19 +50,29 @@ var links = header.getElementsByClassName("link");
       this.className += " active";
       });
     }
-//let tempF = parseInt(document.querySelector("#tempF").value);
-//let speed = parseInt(document.querySelector("#speed").value);
-let tempF = 45;
-let speed = 5;
-function windChill(x, y){
+// Number of days since last visit
 
-    formula = 35.74 + (0.6215 * x) - (35.75 * Math.pow(y, 0.16)) + 0.4275 * x * (Math.pow(y, 0.16));
-    formula = formula.toFixed(0);
-	return formula;
-        
-}
+if(!localStorage.getItem('date')) {
+	date_storage();
+  } else {
+		var last_visit = localStorage.getItem("date");
+	
+		number_of_days(last_visit, numerical_date);
+  };
 
-if (tempF <= 50 && speed > 3){
+function date_storage(){
+	localStorage.setItem("date", numerical_date);
+  };
 
-    document.querySelector("#windChill").innerHTML = windChill(tempF, speed);
-}
+function number_of_days(start, end){
+	var date1 = new Date(start);
+	var date2 = new Date(end);
+
+	var oneDay = 1000 * 60 * 60 * 24;
+
+	var time_difference = date2.getTime() - date1.getTime();
+
+	var day_difference = Math.round(time_difference / oneDay);
+
+	document.querySelector("#last_visit") = `Your last visit was ${day_difference} days ago.`;
+};

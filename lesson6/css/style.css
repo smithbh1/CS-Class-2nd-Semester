@@ -78,6 +78,22 @@ nav{
     display: block;
 }
 
+.grid_container{
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+    max-width: 780px;
+}
+figure{
+    background-color: aliceblue;
+}
+
+figcaption{
+    display: none;
+    padding: .2em;
+    font-family: Merriweather, sans-serif;
+}
+
 .hero_div,
 .article_div,
 .contact_info{
@@ -173,6 +189,12 @@ p{
         width: 100px;
         height: auto;
     }
+    .grid_container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 960px;
+    }
+    
     
     h1{
         font-size: 35px;
@@ -227,6 +249,18 @@ p{
     header img {
         width: 120px;
         height: auto;
+    }
+    .grid_container{
+        max-width: 1080px;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    figure:hover{
+        box-shadow: 0 0 50px #333;
+    }
+    figcaption{
+        display:block;
+        font-size: 12px;
+        background-color: aliceblue;
     }
 
     
