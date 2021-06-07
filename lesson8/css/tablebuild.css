@@ -1,0 +1,45 @@
+body{
+    font-family: Ubuntu, sans-serif;
+    font-size: 16px;
+}
+
+thead th{
+    font-size: 2rem;
+    background-color: #7fb9c2;
+}
+table{
+    box-shadow: 10px 5px 5px #628ca6 ;
+}
+table,
+th,
+td
+{
+    padding: .25em;
+    border-collapse: collapse;
+    border: 1px solid #e7f0ed;
+}
+tbody th,
+#nov_goal{
+    background-color: #628ca6;
+    color:white;
+}
+tbody tr{
+    background-color:#e7ffed;
+}
+tbody tr:nth-child(2){
+    background-color: #e7f0ed;
+}
+tbody tr:nth-child(4){
+    background-color: #e7f0ed;
+}
+tbody tr:nth-child(6){
+    background-color: #e7f0ed;
+}
+td{
+    text-align: center;
+}
+
+tfoot td{
+    background-color: #7fb9c2;
+    font-size: .75rem;
+}
