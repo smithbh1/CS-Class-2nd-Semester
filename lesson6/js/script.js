@@ -75,5 +75,5 @@ function number_of_days(start, end){
 
 	var day_difference = Math.round(time_difference / oneDay);
 
-	document.querySelector("#last_visit") = `Your last visit was ${day_difference} days ago.`;
+	document.querySelector("#last_visit").innerHTML = `Your last visit was ${day_difference} days ago.`;
 };
