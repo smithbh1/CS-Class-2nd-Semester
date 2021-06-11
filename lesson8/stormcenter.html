@@ -31,50 +31,77 @@
             <li class="link"><a href="#">Soda Springs</a></li>
             <li class="link"><a href="#">Fish Haven</a></li>
             <li class="link"><a href="#">Storm Center</a></li>
-            <li class="link"><a href="#">Gallery</a></li>
+            <li class="link"><a href="../lesson7/gallery-7.html">Gallery</a></li>
         </ul>
     </nav>
     <main>
-        <form>
-            <label for="fname">Full Name</label>
-            <input type="text" name="fname">
-            <label for="email">Email</label>
-            <input type="email">
-            <label for="phone">Phone Number</label>
-            <input type="tel">
-            <label for="zipcode">Zipcode</label>
-            <input type="number">
-            <label for="storm_date">Storm Date</label>
-            <input type="date">
-            <label for="email">Email</label>
-            <input type="email">
-            <label for="email">Email</label>
-            <input type="email">
-            <label for="email">Email</label>
-            <input type="email">
-            <label for="email">Email</label>
-            <input type="email">
-            <label for="email">Email</label>
-            <input type="email">
-            <label for="email">Email</label>
-            <input type="email">
+        <h2>Storm Center</h2>
+        <form method="get" action= "thank-you.html">
+            <fieldset>
+                <legend>Personal Information</legend>
+            <label for="fname">Full Name*</label>
+            <input type="text" name="fname" id="fname" required minlength="5" pattern="/[A-Za-z]{5}+/">
+            <label for="email">Email*</label>
+            <input type="email" name="email" placeholder="my@example.com">
+            <label for="phone">Phone Number*</label>
+            <input type="tel" name="phone" id="phone" required placeholder="xxxxxxxxxx" minlength="10">
+            <label for="zipcode">Zipcode*</label>
+            <input type="number" name="zipcode" id="zipcode" required>
+        </fieldset>
+        <fieldset>
+            <legend>Storm Information</legend>
+        
+            <label>Storm Date<input type="date" name="storm_date"></label>
+            
+            <label>Storm Type<input type="text" list="storm_list"></label>
+            
+            <datalist id="storm_list">
+                <option>Flash Flood</option>
+                <option>Hail</option>
+                <option>Hurricane</option>
+                <option>Thunderstorm</option>
+                <option>Tornado</option>
+            </datalist>
+            <label>Storm Severity<input type="range" min="0" max="10" step="1" name="severity"></label>
+            <label for="region">Storm Region</label>
+            <select name="region">
+                <option value="" disabled selected>Select a Region...</option>
+                <option value="Preston">Preston</option>
+                <option value="Soda Springs">Soda Springs</option>
+                <option value="Fish Haven">Fish Haven</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Danger</legend>
+            <p>Currently in Danger?</p>
+            <label for="yes">Yes</label>
+            <input type="radio" id="yes" name="yes">            
+            <label for="maybe">Maybe</label>
+            <input type="radio" id="maybe" name="maybe">
+            <label for="no">No</label>
+            <input type="radio" id="no" name="no">
+        </fieldset>
+            <label for="comments">Additional Comments<textarea name="comments" cols="10" rows="10">Write your comment here</textarea></label>
+            <button type="submit" id="submit" onclick= thank_you()>Report My Storm</button>
 
         </form>
-        </main>
+    </main>
     <footer>
         &copy; <span>Sun-Day Weather</span> <span>-- Brian Smith</span>
         <p id="currentdate"></p><span id="last_visit"></span>
         <script src="../lesson6/js/script.js"></script>
-        <script src="js/lazyload_script.js"></script>
+        <script src="..//lesson7/js/lazyload_script.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
         <script>
-        WebFont.load({
-            google: {
-              families: [
-                 'Merriweather'
-              ]
-            }
-          });</script>
+            WebFont.load({
+                google: {
+                    families: [
+                        'Merriweather'
+                    ]
+                }
+            });
+        </script>
     </footer>
-    </body>
-    </html>
+</body>
+
+</html>

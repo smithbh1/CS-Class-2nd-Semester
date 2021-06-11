@@ -56,6 +56,7 @@ if(!localStorage.getItem('date')) {
 	date_storage();
   } else {
 		let last_visit = localStorage.getItem("date");
+		localStorage.setItem("today", numerical_date);
 		let today = numerical_date;
 		number_of_days(last_visit, today);
   };
@@ -77,3 +78,23 @@ function number_of_days(start, end){
 
 	document.querySelector("#last_visit").innerHTML = `Your last visit was ${day_difference} days ago.`;
 };
+//New "Thank You" window
+function thank_you(){
+	valid = false;
+	fname = document.querySelector("#fname");
+	phone = document.querySelector("#phone");
+	zipcode = document.querySelector("#zipcode");
+	submit = document.querySelector("#submit");
+
+
+	if (fname.length >= 5 && fname.length != null && phone.length == 10 && phone.length != null && zipcode.length == 5 && zipcode.length != null){
+		valid = true;
+		window.open("thank-you.html","Ratting","width=550,height=550,left=150,top=200,toolbar=0,status=0,");
+	}
+
+	if (valid == true){
+		window.open("thank-you.html","Ratting","width=550,height=550,left=150,top=200,toolbar=0,status=0,");
+	}
+	
+	
+}

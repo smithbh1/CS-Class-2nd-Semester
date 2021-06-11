@@ -165,11 +165,24 @@ footer{
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+form{
+    margin: 10px auto;
+}
+form,
+fieldset{
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    background-color: beige;
+    max-width: 780px;
+    
+}
 
 p{
     font-family: Merriweather, serif ;
     font-size: 16px;
 }
+
 @media only screen and (min-width: 32.5em){
 
     .navigation {
@@ -235,8 +248,26 @@ p{
     }
     .sunny{
         max-width: 10vw;
-
     }
+    /*form{
+        display:grid;
+        grid-template-columns: .2fr 1fr;
+        max-width: 780px;
+        margin: 10px auto;
+    }
+    form label{
+        grid-column: 1 / 1;
+    }
+    form input{
+        margin:.5em;
+    }
+    button{
+        grid-column: 2 / 2;
+        max-width: 150px;
+        align-items: center;
+        justify-content: center;
+    }*/
+    
     footer{
         font-size: 18px;
     }
