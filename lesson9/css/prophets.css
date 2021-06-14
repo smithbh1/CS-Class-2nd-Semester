@@ -1,0 +1,40 @@
+main{
+    
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+h1,
+h2,
+p{
+    text-align: center;
+    color:rgb(4, 153, 153)
+}
+
+section{
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(144, 247, 247);
+    border: 2px solid rgb(2, 114, 114);
+}
+img{
+    display:block;
+    margin: 10px auto;
+}
+
+@media only screen and (min-width: 32.5em){
+
+    .cards{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        
+    }
+   
+}
+@media only screen and (min-width: 80em){
+    .cards{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
