@@ -84,6 +84,11 @@ nav{
     margin: 10px auto;
     max-width: 780px;
 }
+picture img{
+    display: block;
+    max-width: 780px;
+    margin: 10px auto;
+}
 figure{
     background-color: aliceblue;
 }
