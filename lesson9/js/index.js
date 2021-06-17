@@ -8,24 +8,30 @@ fetch(requestURL)
     const towns = jsonObject['towns'];
     console.table(jsonObject);  // temporary checking for valid response and data parsing
     
-    for (let i = 0; i < towns.length; i++ ) {
-        let town = document.createElement('section');
+    const correct_town = towns.filter(x => x.name == 'Preston' || x.name == 'Soda Springs' || x.name == 'Fish Haven');
+
+    correct_town.forEach(town => {
+        let soda = document.createElement('section');
         let h2 = document.createElement('h2');
         let p = document.createElement('p');
         let p2 = document.createElement('p')
+        let p3 = document.createElement('p')
         let image = document.createElement('img')
 
-        h2.textContent = towns[i].name;
-        p.textContent = 'Year Founded ' + towns[i].yearFounded;
-        p2.textContent = 'Motto: '+ towns[i].motto;
-        image.setAttribute('src', towns[i].photo);
-        image.setAttribute('alt', towns[i].name);
-        town.appendChild(h2);
-        town.appendChild(p);
-        town.appendChild(p2);
-        town.appendChild(image);
+        h2.textContent = town.name;
+        p.textContent = `Year Founded: ${town.yearFounded}`;
+        p2.textContent = 'Population: '+ town.currentPopulation;
+        p3.textContent = 'Average Rainfall: ' + town.averageRainfall;
+        image.setAttribute('src', `images/${town.photo}`);
+        image.setAttribute('alt', town.name);
+        soda.appendChild(h2);
+        soda.appendChild(p);
+        soda.appendChild(p2);
+        soda.appendChild(p3);
+        soda.appendChild(image);
 
-        document.querySelector('div.town_info').appendChild(town);
-    }
-
+        document.querySelector('div.town_info').appendChild(soda);
+    
+    })
 });
+  

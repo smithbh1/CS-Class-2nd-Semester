@@ -148,6 +148,14 @@ h3{
     padding: .25em;
         
 }
+.town_info{
+    max-width: 780px;
+    margin: 10px auto;
+    border: 1px solid #333;
+    background-color: bisque;
+    text-align: center;
+}
+
 .contact_info{
     margin-top: .5em;
     text-align: center;
@@ -256,6 +264,31 @@ p{
     .sunny{
         max-width: 10vw;
     }
+    
+    section{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    section:nth-child(even) img{
+        grid-column: 1;
+        grid-row: 1 / 5;
+        
+    }
+    section:nth-child(even) h2,
+    section:nth-child(even) p{
+        grid-column: 2;
+    }
+    section:nth-child(odd) img{
+        grid-column: 2;
+        grid-row: 1 / 5;
+        
+        
+    }
+    section:nth-child(odd) h2,
+    section:nth-child(odd) p{
+        grid-column: 1;
+    }
     /*form{
         display:grid;
         grid-template-columns: .2fr 1fr;
@@ -300,7 +333,20 @@ p{
         font-size: 12px;
         background-color: aliceblue;
     }
-
+    .town_info {
+        background-color: rgba(252, 231, 5, 1);
+        border: none;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    section{
+        padding: .25em;
+        background-color:beige ;
+        margin: .5em;
+        border: 1px solid #333;
+        display: block;
+    }
+    
     
     footer{
         font-size: 20px;
