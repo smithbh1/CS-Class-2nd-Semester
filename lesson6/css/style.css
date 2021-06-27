@@ -100,7 +100,6 @@ figcaption{
 }
 
 .hero_div,
-.article_div,
 .contact_info{
     
     margin-left:auto;
@@ -255,11 +254,19 @@ p{
         border: solid 2px black;
         
     }
-    .article_img,
+    .article_img{
+        max-width: 300px;
+        
+    }
     .article_div{
+        max-width: 780px;
+    }
+    
+    .article_div,
+    .article_img{
         display: block;
         margin: 10px auto;
-        max-width: 780px;
+        
     }
     .sunny{
         max-width: 10vw;
