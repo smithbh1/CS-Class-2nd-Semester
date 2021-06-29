@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="weather updates and information for those in certain areas of Idaho">
+    <title>Sun-day Weather Forecast</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/sun.ico">
+
+</head>
+
+<body>
+    <div class="banner_message">Saturday = Preston Pancakes in the Park 9:00 a.m. Saturday at the city park pavilion
+    </div>
+    <header>
+        <img src="images/sun.png" alt="sun with sunglasses">
+        <div class="heading">
+            <h1>Sun-Day Weather Center</h1>
+            <div class="slogan">The most reliable and up-to-date weather!</div>
+        </div>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a class="ham_menu" href="#">Menu</a></li>
+            <li class="link"><a href="index.html">Home</a></li>
+            <li class="link"><a href="preston.html">Preston</a></li>
+            <li class="link"><a href="#">Soda Springs</a></li>
+            <li class="link"><a href="#">Fish Haven</a></li>
+            <li class="link"><a href="storm_center.html">Storm Center</a></li>
+            <li class="link"><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Storm Center</h2>
+        <form method="get" action= "thank-you.html">
+            <fieldset>
+                <legend>Personal Information</legend>
+            <label for="fname">Full Name*</label>
+            <input type="text" name="fname" id="fname" required minlength="5" pattern="/[A-Za-z]{5}+/">
+            <label for="email">Email*</label>
+            <input type="email" name="email" placeholder="my@example.com">
+            <label for="phone">Phone Number*</label>
+            <input type="tel" name="phone" id="phone" required placeholder="xxxxxxxxxx" minlength="10">
+            <label for="zipcode">Zipcode*</label>
+            <input type="number" name="zipcode" id="zipcode" required>
+        </fieldset>
+        <fieldset>
+            <legend>Storm Information</legend>
+        
+            <label>Storm Date<input type="date" name="storm_date"></label>
+            
+            <label>Storm Type<input type="text" list="storm_list"></label>
+            
+            <datalist id="storm_list">
+                <option>Flash Flood</option>
+                <option>Hail</option>
+                <option>Hurricane</option>
+                <option>Thunderstorm</option>
+                <option>Tornado</option>
+            </datalist>
+            <label>Storm Severity<input type="range" min="0" max="10" step="1" name="severity"></label>
+            <label for="region">Storm Region</label>
+            <select name="region">
+                <option value="" disabled selected>Select a Region...</option>
+                <option value="Preston">Preston</option>
+                <option value="Soda Springs">Soda Springs</option>
+                <option value="Fish Haven">Fish Haven</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Danger</legend>
+            <p>Currently in Danger?</p>
+            <label for="yes">Yes</label>
+            <input type="radio" id="yes" name="yes">            
+            <label for="maybe">Maybe</label>
+            <input type="radio" id="maybe" name="maybe">
+            <label for="no">No</label>
+            <input type="radio" id="no" name="no">
+        </fieldset>
+            <label for="comments" id="comments_label">Additional Comments</label>
+            <textarea name="comments" id="comments" cols="50" rows="10">Write your comment here</textarea>
+            <button type="submit" id="submit">Report My Storm</button>
+
+        </form>
+    </main>
+    <footer>
+        &copy; <span>Sun-Day Weather</span> <span>-- Brian Smith</span>
+        <p id="currentdate"></p><span id="last_visit"></span>
+        <script src="js/script.js"></script>
+        <script src="js/lazyload_script.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script>
+            WebFont.load({
+                google: {
+                    families: [
+                        'Merriweather'
+                    ]
+                }
+            });
+        </script>
+    </footer>
+</body>
+
+</html>
