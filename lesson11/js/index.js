@@ -20,7 +20,7 @@ fetch(requestURL)
         h2.textContent = town.name;
         p.textContent = `Year Founded: ${town.yearFounded}`;
         p2.textContent = 'Population: '+ town.currentPopulation;
-        p3.textContent = 'Average Rainfall: ' + town.averageRainfall;
+        p3.textContent = 'Average Rainfall: ' + town.averageRainfall + " in.";
         image.setAttribute('src', `images/${town.photo}`);
         image.setAttribute('alt', town.name);
         soda.appendChild(h2);
