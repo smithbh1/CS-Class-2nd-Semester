@@ -78,3 +78,7 @@ function number_of_days(start, end){
 
 	document.querySelector("#last_visit").innerHTML = `Your last visit was ${day_difference} days ago.`;
 };
+window.addEventListener('beforeunload', function (event) {
+    delete event['returnValue'];
+    localStorage.setItem("date", numerical_date)
+  });
