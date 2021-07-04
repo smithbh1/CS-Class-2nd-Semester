@@ -30,7 +30,5 @@ fetch(requestURL)
         soda.appendChild(image);
 
         document.querySelector('div.town_info').appendChild(soda);
-    
-    })
-});
-  
+        
+      });})
