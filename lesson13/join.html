@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <ul class="navigation">
+            <li><a class="ham_menu" href="#">Menu</a></li>
+            <li class="link"><a href="index.html">Home</a></li>
+            <li class="link"><a href="city.html">City</a></li>
+            <li class="link"><a href="join.html">Join</a></li>
+            <li class="link"><a href="directory.html">Directory</a></li>
+            <li class="link"><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <header>
+
+    </header>
+
+    <main>
+        <form method="get" action="thank-you.html">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="fname">First Name*</label>
+                <input type="text" name="fname" id="fname" required minlength="5" pattern="/[A-Za-z]{5}+/">
+                <label for="lname">Last Name*</label>
+                <input type="text" name="lname" id="lname" required minlength="5" pattern="/[A-Za-z]{5}+/">
+                <label for="title">Title</label>
+                <input type="text" name="title" id="title">
+                <label for="email">Email*</label>
+                <input type="email" name="email" required placeholder="my@example.com">
+                <label for="phone">Phone Number</label>
+                <input type="tel" name="phone" id="phone" placeholder="xxxxxxxxxx" minlength="10">
+                <legend>Business Information</legend>
+                <label for="bname">Business Name*</label>
+                <input type="text" name="bname" id="bname" required>
+                <label for="baddress">Business Address</label>
+                <input type="text" name="baddress" id="baddress">
+                <label for="bwebsite">Business Website</label>
+                <input type="text" name="bwebsite" id="bwebsite">
+                <label for="bdescription">Business Description</label>
+                <input type="text" name="bdescription" id="bdescription">
+                <label for="membership">Membership Level</label>
+                <select name="membership">
+                    <option value="" disabled selected>Choose Membership Level...</option>
+                    <option value="bronze">Non-profit- $100</option>
+                    <option value="bronze">Bronze- $200</option>
+                    <option value="silver">Silver- $400</option>
+                    <option value="gold">Gold- $1000</option>
+                </select>
+
+        </form>
+        <div class="membership">
+        <h3>Non-Profit</h3>
+        <p>This selection allows for one shout-out on our home page per month to promote awareness of your business. It
+            also allows 1 planned event geared toward your business per year.</p>
+        <h3>Bronze</h3>
+        <p>Our bronze members receive the opportunity to have 2 shout-outs on our home page per month and 1 planned event every 6 months.</p>
+        <h3>Silver</h3>
+        <p>Silver members get 4 shout-outs per month on our home page, we buy samples of your product to give out at local community events, and plan 1 event every 3 months to promote your business.</p>
+        <h3>Gold</h3>
+        <p>Our gold members get everything our silver members get, but an additional 8 events per year! This brings the event total to 12, so we feature an event for your business once a month!</p>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>

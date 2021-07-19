@@ -1,0 +1,60 @@
+{
+    "business":[
+        {
+            "name": "Q90 Software",
+            "phone": "(801) 491-0705",
+            "email": "info@q90.com",
+            "logo": "images/q90_logo.png",
+            "site": "https://www.q90.com/"
+        
+        },
+        {
+            "name": "Rowley's Red Barn",
+            "phone": "(801) 754-5511",
+            "email": "None",
+            "logo": "images/red_barn_logo.png",
+            "site": "https://www.rowleysredbarn.com/"
+        
+        },
+        {
+            "name": "Farm Yard Fresh",
+            "phone": "(801) 201-6075",
+            "email": "None",
+            "logo": "images/farm_yard_fresh_logo.png",
+            "site": "https://www.farmyardfresh.com/"
+        
+        },
+        {
+            "name": "Cherry Hill Farms Inc",
+            "phone": "(801) 754-3969",
+            "email": "None",
+            "logo": "images/cherry_hill_farm_logo.png",
+            "site": "https://cherryhillfarms.com/"
+        
+        },
+        {
+            "name": "Ivanov's Market",
+            "phone": "(801) 754-5494",
+            "email": "None",
+            "logo": "images/ivanov's_market_logo.png",
+            "site": "https://business.facebook.com/Ivanovsmarket/?ref=py_c"
+        
+        },
+        {
+            "name": "Grandpa V's Family Fruit Stand",
+            "phone": "(801) 318-1602",
+            "email": "None",
+            "logo": "None",
+            "site": "https://www.facebook.com/pages/category/Fruit---Vegetable-Store/Grandpa-Vs-Family-Fruit-Stand-1246590432117408/"
+        
+        },
+        {
+            "name": "McMullin Orchards Inc",
+            "phone": "(801) 465-4819",
+            "email": "None",
+            "logo": "images/mcmullin_orchards_logo.png",
+            "site": "http://www.mcmullinorchards.com/"
+        
+        }
+    ]
+}
