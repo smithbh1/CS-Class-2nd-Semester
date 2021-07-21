@@ -7,7 +7,7 @@ fetch (apiURL)
         console.log(jsonObject);
         document.querySelector('#desc').innerHTML = jsonObject.current.weather[0].description.toUpperCase();
         document.querySelector('#tempF').innerHTML = jsonObject.current.temp;
-        document.querySelector('#humidity').innerHTML = `Humidity: ${jsonObject.current.humidity}%`;
+        document.querySelector('#humidity').innerHTML = `${jsonObject.current.humidity}%`;
         /*if (jsonObject.current.alerts[0] == undefined){
             document.querySelector('#alerts').innerHTML = jsonObject.current.alerts[0].description;
         }*/
@@ -20,8 +20,15 @@ fetch (apiURL)
             let card = document.createElement('div');
             let h3 = document.createElement('h3');
             let p = document.createElement('p');
-            
+            if (x == jsonObject.daily[1]){
             h3.textContent = day_of_week[d.getDay()];
+            }
+            else if(x == jsonObject.daily[2]){
+                h3.textContent = day_of_week[d.getDay()+1];
+                }
+            else if(x == jsonObject.daily[3]){
+                h3.textContent = day_of_week[d.getDay()+2];
+                }
             p.textContent = `${x.temp.max}\u00B0\F`;
             card.appendChild(h3);
             card.appendChild(p);

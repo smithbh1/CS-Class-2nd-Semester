@@ -8,6 +8,7 @@ fetch(business_directory)
     const business = jsonObject['business'];
 
     business.forEach(x => {
+        console.log(x)
         let card = document.createElement('div');
         let h3 = document.createElement('h3');
         let p = document.createElement('p');
@@ -19,7 +20,7 @@ fetch(business_directory)
         p.textContent = x.phone;
         p1.textContent = `Email: ${x.email}`;
         p2.textContent = `Site: ${x.site}`;
-        image.setAttribute = ('src', x.logo);
+        image.setAttribute = ('src', `images/${x.logo}`);
         image.setAttribute = ('alt', x.name);
 
         card.appendChild(h3);
@@ -30,3 +31,17 @@ fetch(business_directory)
 
         document.querySelector('div.business_card').appendChild(card);
     })});
+
+    function grid(){
+        document.querySelector(".business_card").style.display = "flex";
+        document.querySelector(".business_card").style.flexDirection = "row";
+        document.querySelector(".business_card").style.flexWrap = "wrap";
+
+
+    }
+    function list(){
+        document.querySelector(".business_card").style.display = "flex";
+        document.querySelector(".business_card").style.flexDirection = "column";
+
+
+    }
